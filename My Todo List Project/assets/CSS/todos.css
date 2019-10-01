@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	/*gradient background */
 	background: #355c7d; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #c06c84, #6c5b7b, #355c7d); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(
@@ -12,8 +13,7 @@ body {
 #container {
 	background: #f7f7f7;
 	width: 360px;
-	/* Center the container: */
-	margin: 100px auto; /* box-shadow */
+	margin: 100px auto;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	border: 3px solid rgba(0, 0, 0, 0); /*this is optional*/
@@ -31,33 +31,32 @@ h1 {
 	float: right;
 }
 input {
-	font-size: 18px; /* background-color: #f7f7f7; */
+	font-size: 18px; 
+	/* background-color: #f7f7f7; */
 	color: #6c5b7b;
 	background: #f7f7f7;
 	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
-	border: 3px solid rgba(0, 0, 0, 0); /* fill the gap of h1 and ul */
+	border: 3px solid rgba(0, 0, 0, 0); 
 }
 input:focus {
 	background: #fff;
 	border: 3px solid #6c5b7b;
-	/* no default highlight from browser: */
-	outline: none;
+	outline: none; /* no default highlight from browser */
 }
 ul {
-	/* getting rid of bullet points from <ul>*/
-	list-style: none;
+	list-style: none; /* no default bullet points */
 	margin: 0;
 	padding: 0;
 }
 li {
 	background: #fff;
-	height: 40px; /* to strech: */
+	height: 40px;
 	line-height: 40px;
 	color: #666;
 }
-/* Animation of span - default stage */
+/* <span> Animation - default stage */
 li span {
 	background: #c06c84;
 	height: 40px;
@@ -69,16 +68,17 @@ li span {
 	transition: 0.2s linear;
 	opacity: 0;
 }
-/* Animation of span - trash */
+/* <span> Animation */
 li:hover span {
 	width: 40px;
-	opacity: 1.0; /* transition: 500ms; */
+	opacity: 1.0; 
+	/* transition: 500ms; */
 }
-/* every 2nd li to be a different color: */
+
 li:nth-child(2n) {
 	background: #f7f7f7;
 }
-/* Style used to toggle when a task is done or not */
+/* Toggle <span> - line-throuh items from list when completed */
 .done {
 	color: gray;
 	text-decoration: line-through;
