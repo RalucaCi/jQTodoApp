@@ -1,9 +1,9 @@
-// check off specific todos by clicking
+// Check off todos by clicking on them
 $('ul').on('click', 'li', function() {
 	$(this).toggleClass('done');
 });
 
-// click on x to delete todo
+// Click on x to delete todo
 $('ul').on('click', 'span', function(event) {
 	event.stopPropagation();
 	// first fadeout then remove:
@@ -12,7 +12,7 @@ $('ul').on('click', 'span', function(event) {
 	});
 });
 
-// Creating a Todo:
+// Create a new entry in Todo list
 $("input[type='text']").keypress(function(event) {
 	// this will listen for the ENTER key - nr 13:
 	if (event.which === 13) {
